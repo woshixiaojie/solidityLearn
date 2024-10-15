@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "MY_ADDRESS",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Constants.sol": "Var"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Constants.sol": {
+			"keccak256": "0x7b38fdd1e301d2af1701b962384e271d3c88463517f6d3bb13354e9fb53c971e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e72b1cd0f7230a5eb71098b61af3bda937e71c78b8917e8ca15c88f76e30eb0b",
+				"dweb:/ipfs/QmZc8tDYWkXpYCEEyWqA2wBXLm2vvV3aNuaPyMBindgx9C"
+			]
+		}
+	},
+	"version": 1
+}
