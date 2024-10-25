@@ -1,6 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
+
+abstract contract Hello{
+    function  a()  public virtual ;
+}
+
+contract World is Hello{
+     function  a()  public override {
+        
+     } 
+} 
+
 contract A {
     // 使用virtual表明foo会被继承
     function foo() external pure virtual returns (string memory) {

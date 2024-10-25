@@ -6,6 +6,9 @@ contract CallTestContract{
     function setX(address _test, uint _x) external {
         // 然后以合约为类型调用函数
         TestContract(_test).setX(_x);
+
+        OtherContract other = OtherContract(_test);
+        
     }
 
     // 第二种写法就是直接以合约为类型

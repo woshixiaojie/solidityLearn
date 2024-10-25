@@ -2,22 +2,36 @@
 pragma solidity ^0.8.7;
 
 contract ValueTypes {
-    bool public b = true;
+    // bool public b = true;
 
-    uint public u = 123; // uint= uint256 0 to 2**256 - 1
-                         // uint8  0 to 2**8 -1
-                         // uint16 0 to 2**16 - 1
+    // uint public u = 123; // uint= uint256 0 to 2**256 - 1
+    //                      // uint8  0 to 2**8 -1
+    //                      // uint16 0 to 2**16 - 1
 
-    int public i = -123; // int = int256 -2**255 to 2^255 -1
-                         // int128 -2**127 to 2**127 -1
+    // int public i = -123; // int = int256 -2**255 to 2^255 -1
+    //                      // int128 -2**127 to 2**127 -1
 
-    // 获取int的最大最小值
-    int public minInt = type(int).min;
-    int public maxInt = type(int).max;
+    // // 获取int的最大最小值
+    // int public minInt = type(int).min;
+    // int public maxInt = type(int).max;
 
-    // 下面的内容会面会说明
-    address public addr = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 ;
-    bytes32 public b32 = 0x5B38Da6a701c568545dCfcB03FcB875f501c568545dCfcB03FcB875f56beddC4;
+    // // 下面的内容会面会说明
+    // address public addr = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 ;
+    // bytes32 public b32 = 0x5B38Da6a701c568545dCfcB03FcB875f501c568545dCfcB03FcB875f56beddC4;
+
+        // 插入排序 错误版
+    function insertionSortWrong(uint[] memory a) public pure returns(uint[] memory) {    
+        for (uint i = 1;i < a.length;i++){
+            uint temp = a[i];
+            uint j=i;
+            while( (j >= 1) && (temp < a[j -1])){
+                a[j] = a[j-1];
+                j--;
+            }
+            a[j] = temp;
+        }
+        return(a);
+}
 
 }
 

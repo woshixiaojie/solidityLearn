@@ -15,14 +15,24 @@ contract Immutable {
     // 消耗的gas一致
     address public immutable owner;
 
+    struct test{
+        string a;
+    }
+
     constructor() {
         owner = msg.sender;
     }
+
+
 
     uint public x;
     function foo() external  {
         require(owner == msg.sender);
         x += 1;
+    }
+
+    function test1() external pure {
+        
     }
 
 }
